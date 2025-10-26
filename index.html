@@ -3,43 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário da ONG Amigão</title>
+    <title>ONG Anjos da Guarda - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Usuário da ONG</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+            <div class="logo">&#128153; Anjos da Guarda</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+
             </ul>
-        </nav>    
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>Somos uma organização sem fins lucrativos que atua com animais abandonados</p>
-            <img src="imagem.jpg" alt="Imagem de animais resgatados">
-        </section>
 
-        <section>
-            <h2> Missão da ONG Amigão</h2>
-            <p>Nossa missão é resgatar, cuidar e encontrar lares amorosos para animais abandonados, promovendo o bem-estar animal e a conscientização sobre a importância da adoção responsável.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Um dia por mês. Um abraço para a vida toda.</h1>
+            <p>Promover o bem-estar emocional e social de crianças e adolescentes em situação de acolhimento institucional, oferecendo momentos de lazer, carinho e atenção individualizada.</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+        </div>
+    </section>
 
-        <section>
-            <h2> Contato com a ONG Amigão</h2>
-            <address>
-                <p> Endereço: Rua passagem bingo, 123 - Bairro Bela Vista - São Paulo/SP</p>
-                <p>Telefone: (11) 96192-4246</p>
-                <p>Email: contato@organizaçãoamigao.com.br</p>
-            </address>
-        </section>
-    </main>
+    <!-- Quem Somos -->
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>Somos uma organização sem fins lucrativos. Nossa missão é conectar voluntários e orfanatos, levando carinho, atenção individualizada e a esperança de um futuro mais feliz.</p>
+        <img src="voluntarios.png" alt="Voluntários com crianças">
+    </section>  
 
+    <section class="contact">
+        <h2>Fale Conosco</h2>
+        <address>
+            <p>📍 <strong>Endereço:</strong> Passagem Bingo, 123 - Bom Clima, São Paulo/SP</p>
+            <p>📞 <strong>Telefone:</strong> (11) 99999-9999</p>
+            <p>✉️ <strong>E-mail:</strong> contato@onganjosdaguarda.org</p>
+        </address>
+    </section>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 ONG Amigão. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Organização Anjos da Guarda. Todos os direitos reservados.</p>
+     <p>Feito com &#10084;&#65039; para transformar vidas</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
