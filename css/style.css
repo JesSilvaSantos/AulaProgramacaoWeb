@@ -236,3 +236,168 @@ footer {
     margin-top: 3rem;
     border-top: 1px solid #ffd1e6;
 }
+
+
+
+.voluntarios-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+
+.voluntarios-table thead {
+    background-color: #B580CC; 
+    color: white;
+    text-align: left;
+}
+
+.voluntarios-table th {
+    padding: 12px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.voluntarios-table td {
+    padding: 10px 15px;
+    
+    border-bottom: 1px solid #f0f0f0; 
+    word-wrap: break-word; 
+    max-width: 150px; 
+}
+
+
+.voluntarios-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc; 
+}
+
+
+.voluntarios-table tbody tr:hover {
+    background-color: #ffeef2; 
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+
+.voluntarios-table tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+
+
+
+
+#successMessage {
+    display: none; 
+    padding: 15px 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #e6ffec; 
+    color: #008033; 
+    border: 1px solid #00c241;
+    border-left: 5px solid #00c241;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+}
+
+#successMessage.show {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.text-info {
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f7e6ff; 
+    color: #7d4ba7; 
+    border-left: 5px solid #B580CC; 
+    border-radius: 4px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    
+    .voluntarios-table thead {
+        display: none;
+    }
+
+    
+    .voluntarios-table, 
+    .voluntarios-table tbody, 
+    .voluntarios-table tr {
+        display: block;
+        width: 100%;
+    }
+    
+    .voluntarios-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .voluntarios-table td {
+        
+        border: none;
+        border-bottom: 1px dashed #eee; 
+        text-align: right;
+        padding-left: 50%; 
+        position: relative;
+    }
+
+    
+    .voluntarios-table td::before {
+        content: attr(data-label) ": "; 
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #555;
+    }
+    
+    
+    .voluntarios-table tr:last-of-type td:last-child {
+        border-bottom: none;
+    }
+
+    
+.btn-excluir {
+    background-color: #ff4d4d; 
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-excluir:hover {
+    background-color: #cc0000;
+}
+
+.voluntarios-table td[data-label="Ações"] {
+    text-align: center;
+}
+}
